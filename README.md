@@ -1,32 +1,24 @@
-﻿# The main index.html is located at "Diabetes-Website/src/index.html. [HTML5 Boilerplate](https://html5boilerplate.com)
+﻿# The main index.html is located at "Diabetes-Website/src/index.html
 
 [![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
 [![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
 
-HTML5 Boilerplate is a professional front-end template for building
-fast, robust, and adaptable web apps or sites.
+This website is a Diabetes Website that has a blood sugar converter.
 
-This project is the product of many years of iterative development and
-combined community knowledge. It does not impose a specific development
-philosophy or framework, so you're free to architect your code in the
-way that you want.
+This project is the product of a joint project. In is still a work in progress.
+It was started off a HTML5 Bolier Plate you can see the reference to the Bolier Palte below.
 
-* Homepage: [https://html5boilerplate.com](https://html5boilerplate.com)
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Twitter: [@h5bp](https://twitter.com/h5bp)
+* Homepage: [#](Not online yet)
+* Source: [https://github.com/ShrimpMeister/Diabetes-Website/](https://github.com/ShrimpMeister/Diabetes-Website/)
+* Facebook: [#](https://facebook.com/)
 
 
 ## Quick start
 
 Choose one of the following options:
 
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/) or create a
-   custom build using [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
+1. 
+2. 
 
 
 ## Features
