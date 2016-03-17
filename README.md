@@ -1,4 +1,4 @@
-# [HTML5 Boilerplate](https://html5boilerplate.com)
+﻿# The main index.html is located at "Diabetes-Website/src/index.html. [HTML5 Boilerplate](https://html5boilerplate.com)
 
 [![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
 [![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
