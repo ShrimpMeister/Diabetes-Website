@@ -106,7 +106,6 @@ h1, h2, h3, h4, h5 {
 #page-wrap {
     width: 550px;
     margin: 0 auto;
-
     text-align: left;
 
 }
@@ -145,13 +144,71 @@ label {
     padding: 0px;
 }
 
+
+
 #nav ul li {
     margin: 0px auto;
-    padding: 0px 20px;
+    padding: 0px;
     display: inline;
     font-size: 15px;
     list-style-type: none;
 }
+
+li a:link, a:visited{
+    color: black;
+    padding: 12px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border-top: 2px solid #30a7c9;
+    border-bottom: 2px solid #30a7c9;
+    border-right: 2px solid #30a7c9;
+    border-left: 2px solid #30a7c9;
+}
+
+li a:hover, a:active{
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    text-align: center;
+    background-color: #f44336;
+    border-top: 0px solid #30a7c9;
+    border-bottom: 0px solid #30a7c9;
+    border-right: 0px solid #30a7c9;
+    border-left: 0px solid #30a7c9;
+}
+
+#header-conv a:link, a:visited{
+    margin-top: 15px;
+    color: black;
+    padding: 12px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border-top: 2px solid #30a7c9;
+    border-bottom: 2px solid #30a7c9;
+    border-right: 2px solid #30a7c9;
+    border-left: 2px solid #30a7c9;
+}
+#header-conv a:hover, a:active{
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    text-align: center;
+    background-color: #f44336;
+    border-top: 0px solid #30a7c9;
+    border-bottom: 0px solid #30a7c9;
+    border-right: 0px solid #30a7c9;
+    border-left: 0px solid #30a7c9;
+}
+
+/*a:active{*/
+    /*color: #f70100;*/
+    /*text-decoration: none;*/
+/*}*/
 
 /* ==========================================================================
    Helper classes
@@ -263,15 +320,7 @@ label {
         text-shadow: none !important;
     }
 
-    a,
-    a:visited {
-        text-decoration: none;
-    }
 
-    #nav ul li a{
-        text-decoration: none;
-        border:2px solid black;
-    }
 
     a[href]:after {
         content: " (" attr(href) ")";
