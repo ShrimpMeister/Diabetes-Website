@@ -1,35 +1,35 @@
-# [HTML5 Boilerplate](https://html5boilerplate.com)
+# The main index.html is located at "Diabetes-Website/src/index.html
 
 [![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
 [![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
 
-HTML5 Boilerplate is a professional front-end template for building
-fast, robust, and adaptable web apps or sites.
+This website is a Diabetes Website that has a blood sugar converter.
 
-This project is the product of many years of iterative development and
-combined community knowledge. It does not impose a specific development
-philosophy or framework, so you're free to architect your code in the
-way that you want.
+This project is the product of a joint project. In is still a work in progress.
+It was started off a HTML5 Bolier Plate you can see the reference to the Bolier Palte below.
 
-* Homepage: [https://html5boilerplate.com](https://html5boilerplate.com)
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Twitter: [@h5bp](https://twitter.com/h5bp)
+* Homepage: [#](Not online yet)
+* Source: [https://github.com/ShrimpMeister/Diabetes-Website/](https://github.com/ShrimpMeister/Diabetes-Website/)
+* Facebook: [#](https://facebook.com/jordan.reif.3)
 
+## Road-Map
+*...
+*...
+*...
 
-## Quick start
-
-Choose one of the following options:
-
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/) or create a
-   custom build using [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
+## Ideas
+* Global Chat
+* https://www.facebook.com/Heroes-of-Type-1-1666905883594202/?__mref=message_bubble
+	- Talk to the creator of this about collaboration
+* Difference between Type 1 and 2
+* Links to sites like facebook, twitter, instagram
 
 
-## Features
+## Implemented Features
+
+* BSG Converter
+* Homepage
+* 
 
 * HTML5 ready. Use the new elements with confidence.
 * Designed with progressive enhancement in mind.
@@ -60,28 +60,9 @@ Choose one of the following options:
 * Opera *(latest 2)*
 * Safari *(latest 2)*
 
-*This doesn't mean that HTML5 Boilerplate cannot be used in older browsers,
-just that we'll ensure compatibility with the ones mentioned above.*
-
-If you need legacy browser support (IE 6+, Firefox 3.6+, Safari 4+) you
-can use [HTML5 Boilerplate v4](https://github.com/h5bp/html5-boilerplate/tree/v4),
-but is no longer actively developed.
-
-
-## Documentation
-
-Take a look at the [documentation table of contents](dist/doc/TOC.md).
-This documentation is bundled with the project, which makes it readily
-available for offline reading and provides a useful starting point for
-any documentation you want to write about your project.
-
-
 ## Contributing
 
-Hundreds of developers have helped make the HTML5 Boilerplate what it is
-today. Anyone and everyone is welcome to [contribute](CONTRIBUTING.md),
-however, if you decide to get involved, please take a moment to review
-the [guidelines](CONTRIBUTING.md):
+Currently it is just 1 sole dev making this website, any help is appreciated.
 
 * [Bug reports](CONTRIBUTING.md#bugs)
 * [Feature requests](CONTRIBUTING.md#features)
@@ -90,4 +71,4 @@ the [guidelines](CONTRIBUTING.md):
 
 ## License
 
-The code is available under the [MIT license](LICENSE.txt).
+The code is licensed under a Creative Commons Attribution 4.0 International License.
