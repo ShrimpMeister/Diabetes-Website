@@ -19,10 +19,13 @@ It was started off a HTML5 Bolier Plate you can see the reference to the Bolier 
 
 ## Ideas
 * Global Chat
-* https://www.facebook.com/Heroes-of-Type-1-1666905883594202/?__mref=message_bubble
-	- Talk to the creator of this about collaboration
 * Difference between Type 1 and 2
 * Links to sites like facebook, twitter, instagram
+* More info pages
+* Prevention of T2
+* Help pages
+* Donate pages 
+* Product reviews
 
 
 ## Implemented Features
