@@ -7,16 +7,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/*@font-face {*/
-/*font-family: mainFont;*/
-/*src: url(sansation/Sansation_Regular.ttf);*/
-/*}*/
-
 html {
     color: #222;
     font-size: 1em;
-    font-family: Verdana, Geneva, sans-serif;
     line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 /*
@@ -92,22 +88,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-h1, h2, h3, h4, h5 {
+/* Global */
+h1, h2, h4, h5 {
     color: #30a7c9;
+    font-weight: lighter;
 }
 
-#page-wrap-home{
-    width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-
-}
-
-#page-wrap {
-    width: 550px;
-    margin: 0 auto;
-    text-align: left;
-
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -118,95 +107,168 @@ label {
     color: #000;
 }
 
+* {
+    margin:0;
+    padding:0;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+
+    /* Colour */
+    background: #2cc3ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #4158A4, #71A3D7, #5C7FC0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #4158A4, #71A3D7, #5C7FC0); /* Standard syntax */
+
+    /* Rounded Edges */
+    border-radius: 0px 25px 0px 0px;
+    -moz-border-radius:0px 25px 0px 0px;
+    -webkit-border-radius:0px 25px 0px 0px;
+
+    box-shadow: 5px 0px 5px #888888;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: lighter;
+    color: #fff;
+    padding: 10px 10px;
+
+}
+
+nav li a:link, a:visited {
+    background-color: transparent;
+}
+
+nav li a:hover, a:active {
+    color: #000;
+    background-color: #BED7F0;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius:10px 10px 10px 10px;
+    -webkit-border-radius:10px 10px 10px 10px;
+}
+
+nav .collapsible-body{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+nav .collapsible-body-2 {
+    margin-left: 15px;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Search bar */
+
+.search {
+    padding:6px 15px 6px 30px;
+    margin:3px;
+    /*background: url('img\searchIcon.jpg') no-repeat 8px 6px;*/
+}
+
+.rounded {
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+
+input[type=text]{
+    color:#bcbcbc;
+}
+
+.light{
+    width:95%;
+    height:50px;
+    padding:40px 10px;
+}
+
+.light input[type=text]{
+    border:1px solid #acb1b7;
+    background-color:#fcfcfc;
+}
+
+/* Header */
+
+#header {
+    background: #f94b50; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #4158A4, #71A3D7, #5C7FC0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #4158A4, #71A3D7, #5C7FC0); /* Standard syntax */
+    background-color: #EE6E73;
+
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding-left: 250px;
+    width: 100%;
+    height:200px;
+    text-align: left;
+}
+
+#header .header-cont{
+    margin: 0px auto;
+    padding-left: 260px;
+    width: 85%;
+    text-align: left;
+
+}
+
+#header .header-cont h1 {
+    padding-top: 16px;
+    font-size: 60px;
+    color: white;
+}
+
+#header .header-cont h4 {
+    padding-bottom: 15px;
+    margin-top: 30px;
+    font-size: 30px;
+    color:white;
+}
+
+/* Main content */
+
+.content {
+    margin: 0px auto;
+    padding-left: 240px;
+    width: 900px;
+    text-align: left;
+}
+
+/* Footer */
+
 #footer {
     text-align: center;
     font-size: 10px;
     background-color: #cccccc;
-}
-
-#header{
-    background-color: transparent;
-   // padding-bottom: 10px;
-}
-
-#header-conv h2{
-    display: inline-block;
-}
-
-#header-conv a{
-    float: right;
-    padding-top: 30px;
-}
-
-#nav ul{
-    //background-color: #B2FFF4;
     margin: 0px auto;
-    padding: 0px;
+    margin-top: 10px;
+
+    /* Rounded edges */
+    border-radius: 0px 25px 25px 0px;
+    -moz-border-radius:0px 25px 25px 0px;
+    -webkit-border-radius:0px 25px 25px 0px;
 }
 
-#nav ul li {
-    margin: 0px auto;
-    padding: 0px;
-    display: inline;
-    font-size: 15px;
-    list-style-type: none;
-}
 
-li a:link, a:visited{
-    color: black;
-    padding: 12px 23px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: transparent;
-    border-top: 2px solid #30a7c9;
-    border-bottom: 2px solid #30a7c9;
-    border-right: 2px solid #30a7c9;
-    border-left: 2px solid #30a7c9;
-}
-
-li a:hover, a:active{
-    color: white;
-    text-decoration: none;
-    padding: 14px 25px;
-    text-align: center;
-    background-color: #f44336;
-    border-top: 0px solid #30a7c9;
-    border-bottom: 0px solid #30a7c9;
-    border-right: 0px solid #30a7c9;
-    border-left: 0px solid #30a7c9;
-}
-
-#header-conv a:link, a:visited{
-    margin-top: 15px;
-    color: black;
-    padding: 12px 23px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: transparent;
-    border-top: 2px solid #30a7c9;
-    border-bottom: 2px solid #30a7c9;
-    border-right: 2px solid #30a7c9;
-    border-left: 2px solid #30a7c9;
-}
-#header-conv a:hover, a:active{
-    margin-top: 15px;
-    color: white;
-    text-decoration: none;
-    padding: 14px 25px;
-    text-align: center;
-    background-color: #f44336;
-    border-top: 0px solid #30a7c9;
-    border-bottom: 0px solid #30a7c9;
-    border-right: 0px solid #30a7c9;
-    border-left: 0px solid #30a7c9;
-}
-
-/*a:active{*/
-    /*color: #f70100;*/
-    /*text-decoration: none;*/
-/*}*/
 
 /* ==========================================================================
    Helper classes
@@ -231,6 +293,7 @@ li a:hover, a:active{
     height: 1px;
     margin: -1px;
     overflow: hidden;
+    overflow-x: hidden;
     padding: 0;
     position: absolute;
     width: 1px;
@@ -318,8 +381,6 @@ li a:hover, a:active{
         text-shadow: none !important;
     }
 
-
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -373,7 +434,7 @@ li a:hover, a:active{
     }
 }
 
-li{
+li {
     list-style-type: none;
     text-decoration: none;
     display: block

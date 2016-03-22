@@ -14,49 +14,69 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
 <!-- Add your site or application content here -->
-<div id="page-wrap">
 
-    <div id="header-conv">
-        <h2>Blood Sugar Converter</h2>
-        <a href="index.html">Home</a>
-        <hr>
-        <p>This application will convert your mmol/L or mg/dl either way. </p>
+    <nav>
+
+        <a href="#" class="nav-toggle-btn"></a>
+
+        <div class="light">
+            <form>
+                <span><input type="text" class="search rounded" placeholder="Search..."></span>
+            </form>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="converter.html">BSG Converter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="header">
+        <div class="header-cont">
+            <h1>Blood Sugar Converter</h1>
+            </br>
+            <h3>This application will convert your mmol/L or mg/dl either way. </h3>
+        </div>
     </div>
 
-    <div id="converter">
-        <h1>Conversion program</h1>
+    <div class="content">
 
-        <p>Enter your BGL in mmol/L and see its mg/dl equivalent. </p>
-        <label for="mmol/L">mmol/L:
-            <input type="text" name="mmol/L" id="mmol/L"></label>
-        <label for="mg/dl">&nbsp;mg/dl:
-            <input type="text" name="mg/dl" id="mg/dl"></label>
+        <div id="converter">
+            <h1>Conversion program</h1>
 
+            <p>Enter your BGL in mmol/L and see its mg/dl equivalent. </p>
+            <label for="mmol/L">mmol/L:
+                <input type="text" name="mmol/L" id="mmol/L"></label>
+            <label for="mg/dl">&nbsp;mg/dl:
+                <input type="text" name="mg/dl" id="mg/dl"></label>
+
+        </div>
+
+        <h3>What is the difference between mmol/L and mg/dl.</h3>
+        <p>Both sets of units and used to measure blood glucose (sugar) levels and both give
+            the measurement of the concentration of glucose (sugar) in the blood just in different ways.
+            mmol/L gives the molarity, which is the number of molecules of a substance within a specified volume,
+            in this case within 1 litre. mg/dL gives the concentration by the ratio of weight to volume,
+            in this case milligrams per decilitre.</p>
     </div>
 
-    <h3>What is the difference between mmol/L and mg/dl.</h3>
-    <p>Both sets of units and used to measure blood glucose (sugar) levels and both give
-        the measurement of the concentration of glucose (sugar) in the blood just in different ways.
-        mmol/L gives the molarity, which is the number of molecules of a substance within a specified volume,
-        in this case within 1 litre. mg/dL gives the concentration by the ratio of weight to volume,
-        in this case milligrams per decilitre.</p>
 
-    <div id="footer">
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
-                                                                                 style="border-width:0"
-                                                                                 src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
-            xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-            property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
-            xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under a
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
-            License</a>.
-    </div>
+<div id="footer">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                                                                             style="border-width:0"
+                                                                             src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
+        xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+        property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
+        xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under
+    a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+        International
+        License</a>.
+</div>
 <!-- Stop Code here-->
 
 <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
