@@ -7,12 +7,24 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
+body {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #416DFF;
+}
+
+a:visited{
+    color: #7200ff;
 }
 
 /*
@@ -75,183 +87,124 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Global */
-h1, h2, h4, h5 {
-    color: #30a7c9;
-    font-weight: lighter;
+h1{
+    font-size: 50px;
 }
 
-h2{
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #000;
-}
-
-label {
-    color: #000;
-}
-
-* {
-    margin:0;
-    padding:0;
-}
-
-/* Navigation */
-
-nav {
+/* Navigation Menu - Background */
+.navigation {
+    /* critical sizing and position styles */
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
+    right: 0;
     bottom: 0;
-    width: 240px;
 
-    /* Colour */
-    background: #2cc3ff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #4158A4, #71A3D7, #5C7FC0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #4158A4, #71A3D7, #5C7FC0); /* Standard syntax */
+    z-index: 0;
 
-    /* Rounded Edges */
-    border-radius: 0px 25px 0px 0px;
-    -moz-border-radius:0px 25px 0px 0px;
-    -webkit-border-radius:0px 25px 0px 0px;
-
-    box-shadow: 5px 0px 5px #888888;
-}
-
-nav ul {
+    /* non-critical appearance styles */
     list-style: none;
-    margin-top: 0px;
+    background: #3aacff;
+
+
 }
 
-nav ul li a {
-    text-decoration: none;
+/* Navigation Menu - List items */
+.nav-item{
+    list-style-type: none;
+
+    border-bottom: 2px solid black;
+
+}
+
+.nav-item2{
+
+}
+
+.nav-item a {
+    /* non-critical appearance styles */
     display: block;
-    text-align: left;
-    font-weight: lighter;
-    color: #fff;
-    padding: 10px 10px;
-
-}
-
-nav li a:link, a:visited {
-    background-color: transparent;
-}
-
-nav li a:hover, a:active {
-    color: #000;
-    background-color: #BED7F0;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius:10px 10px 10px 10px;
-    -webkit-border-radius:10px 10px 10px 10px;
-}
-
-nav .collapsible-body{
-    font-size: 15px;
-    margin-left: 15px;
-}
-
-nav .collapsible-body-2 {
-    margin-left: 15px;
-}
-
-form {
-    width: 500px;
-    margin: 0 auto;
-}
-
-/* Search bar */
-
-.search {
-    padding:6px 15px 6px 30px;
-    margin:3px;
-    /*background: url('img\searchIcon.jpg') no-repeat 8px 6px;*/
-}
-
-.rounded {
-    border-radius:15px;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-}
-
-input[type=text]{
-    color:#bcbcbc;
-}
-
-.light{
-    width:95%;
-    height:50px;
-    padding:40px 10px;
-}
-
-.light input[type=text]{
-    border:1px solid #acb1b7;
-    background-color:#fcfcfc;
-}
-
-/* Header */
-
-#header {
-    background: #f94b50; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #4158A4, #71A3D7, #5C7FC0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #4158A4, #71A3D7, #5C7FC0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #4158A4, #71A3D7, #5C7FC0); /* Standard syntax */
-    background-color: #EE6E73;
-
-    margin: 0px auto;
-    margin-bottom: 30px;
-    padding-left: 250px;
-    width: 100%;
-    height:200px;
-    text-align: left;
-}
-
-#header .header-cont{
-    margin: 0px auto;
-    padding-left: 260px;
-    width: 85%;
-    text-align: left;
-
-}
-
-#header .header-cont h1 {
-    padding-top: 16px;
-    font-size: 60px;
+    padding: 1em;
     color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s;
 }
 
-#header .header-cont h4 {
-    padding-bottom: 15px;
-    margin-top: 30px;
-    font-size: 30px;
-    color:white;
+.nav-item a:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(10, 13, 82, 0.65) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+    /* Critical position and size styles */
+    min-height: 100%;
+    min-width: 300px;
+    background-color: white; /* Needs a background or else the nav will show through */
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+
+    /* non-critical apperance styles */
+    padding: 4em;
+    background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);
+    background-size: 100%;
+    padding-right: 125px;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+    /* critical styles - hide the checkbox input */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    /* critical positioning styles */
+    position: fixed;
+    left: 15px; top: 15px;
+    z-index: 2;
+
+    /* non-critical apperance styles */
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+    transition: left 0.4s;
+}
+
+.nav-trigger:checked + label {
+    left: 240px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 240px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+    overflow-x: hidden;
+}
+/* Header */
+#header {
+    margin: 0px auto;
+    text-align: left;
+    padding-left: 290px;
+    background-color: #416dff;
 }
 
 /* Main content */
-
-.content {
-    margin: 0px auto;
-    padding-left: 240px;
-    width: 900px;
-    text-align: left;
-}
 
 /* Footer */
 
@@ -259,13 +212,9 @@ input[type=text]{
     text-align: center;
     font-size: 10px;
     background-color: #cccccc;
-    margin: 0px auto;
-    margin-top: 10px;
+    width: 100%;
+    position: relative;
 
-    /* Rounded edges */
-    border-radius: 0px 25px 25px 0px;
-    -moz-border-radius:0px 25px 25px 0px;
-    -webkit-border-radius:0px 25px 25px 0px;
 }
 
 
@@ -274,76 +223,6 @@ input[type=text]{
    Helper classes
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    overflow-x: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -359,83 +238,4 @@ input[type=text]{
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                          http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-li {
-    list-style-type: none;
-    text-decoration: none;
-    display: block
 }

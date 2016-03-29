@@ -3,50 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Blood Sugar Converter | mmol/L to mg/dl converter</title>
-    <meta name="Blood Sugar Converter" content="Blood Sugar Converter">
+    <title>Diabetes</title>
+    <meta name="Home" content="Home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
 
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<!-- Add your site or application content here -->
 
-    <nav>
+    <ul class="navigation">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="#">Need Help?</a></li>
+        <li class="nav-item"><a href="converter.html">BSG Converter</a></li>
+        <li class="nav-item"><a href="#">Other Resources</a></li>
+        <li class="nav-item"><a href="#">Donate</a></li>
+    </ul>
 
-        <a href="#" class="nav-toggle-btn"></a>
 
-        <div class="light">
-            <form>
-                <span><input type="text" class="search rounded" placeholder="Search..."></span>
-            </form>
-        </div>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+    <label for="nav-trigger"></label>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="converter.html">BSG Converter</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="site-wrap">
 
-    </nav>
-
-    <div id="header">
-        <div class="header-cont">
             <h1>Blood Sugar Converter</h1>
-            </br>
-            <h3>This application will convert your mmol/L or mg/dl either way. </h3>
-        </div>
-    </div>
 
-    <div class="content">
+            <p><strong>This application will convert your mmol/L or mg/dl either way.</strong> </p>
 
-        <div id="converter">
-            <h1>Conversion program</h1>
+            <hr>
+
+            <h2>Conversion program</h2>
 
             <p>Enter your BGL in mmol/L and see its mg/dl equivalent. </p>
             <label for="mmol/L">mmol/L:
@@ -54,7 +41,6 @@
             <label for="mg/dl">&nbsp;mg/dl:
                 <input type="text" name="mg/dl" id="mg/dl"></label>
 
-        </div>
 
         <h3>What is the difference between mmol/L and mg/dl.</h3>
         <p>Both sets of units and used to measure blood glucose (sugar) levels and both give
@@ -62,26 +48,24 @@
             mmol/L gives the molarity, which is the number of molecules of a substance within a specified volume,
             in this case within 1 litre. mg/dL gives the concentration by the ratio of weight to volume,
             in this case milligrams per decilitre.</p>
+
+
     </div>
 
-
-<div id="footer">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
-                                                                             style="border-width:0"
-                                                                             src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
-        xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-        property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
-        xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under
-    a
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
-        International
-        License</a>.
-</div>
-<!-- Stop Code here-->
-
-<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <div id="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                                                                                 style="border-width:0"
+                                                                                 src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
+            xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+            property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
+            xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under
+        a
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+            International
+            License</a>.
+    </div>
+    <!-- Stop Code here-->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

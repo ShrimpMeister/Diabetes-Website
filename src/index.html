@@ -6,140 +6,103 @@
     <title>Diabetes</title>
     <meta name="Home" content="Home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
 
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
-    <nav>
+    <ul class="navigation">
+        <!--Home-->
+        <li class="nav-item"><a href="index.html">Home</a></li>
 
-        <a href="#" class="nav-toggle-btn"></a>
+        <!--More Info-->
+        <li class="nav-item"><a href="index.html">More Info</a></li>
 
-        <div class="light">
-            <form>
-                <span><input type="text" class="search rounded" placeholder="Search..."></span>
-            </form>
-        </div>
 
-        <ul>
-            <li><a href="index.html">Home</a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="#">What is Diabetes?</a></li>
-                        <li><a href="#">More on Type 1</a></li>
-                        <li><a href="#">More on Type 2</a></li>
-                        <li><a href="#">How can Type 2 be prevented?</a></li>
-                        <li><a href="#">Insulin, What is it?</a></li>
+        <!--Need Help-->
+        <li class="nav-item"><a href="#">Need Help?</a></li>
+            <ul class="navigation2">
+                <li class="nav-item nav-item2"><a href="index.html">Home</a></li>
+                    <li class="nav-item nav-item2"><a href="index.html">I am Diabetic</a></li>
+                    <li class="nav-item nav-item2"><a href="index.html">I think I might be Diabetic</a></li>
+                    <ul class="navigation3">
+                        <li class="nav-item nav-item2"><a href="index.html">Symptoms</a></li>
+                        <li class="nav-item nav-item2"><a href="index.html">Type 1 or 2</a></li>
                     </ul>
-                </div>
-            </li>
+            </ul>
+        <li class="nav-item"><a href="converter.html">BSG Converter</a></li>
 
-            <li><a href="#">Need Help?</a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="#">I am Diabetic</a></li>
-                        <li><a href="#">I think I might be a Diabetic</a></li>
-                            <div class="collapsible-body-2">
-                                <ul>
-                                    <li><a href="#">Symptoms</a></li>
-                                    <li><a href="#">Determining Type 1 or 2</a></li>
-                                </ul>
-                            </div>
-                    </ul>
-                </div>
-            </li>
+        <!--Other Resources-->
+        <li class="nav-item"><a href="#">Other Resources</a></li>
 
-            <li><a href="converter.html">BSG Converter</a></li>
+        <!--Donate-->
+        <li class="nav-item"><a href="#">Donate</a></li>
+    </ul>
 
-            <li><a href="#">Product Reviews</a></li>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+    <label for="nav-trigger"></label>
 
-            <li><a href="#">Global Chat [TBC]</a></li>
+    <div class="site-wrap">
 
-            <li><a href="#">Links to Resources</a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Other Sites</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Magazines</a></li>
-                        <li><a href="#">Organization</a></li>
-                    </ul>
-                </div>
-            </li>
+        <h1>Diabetes</h1>
+        <h2>What is the difference between Type 1, Type 2 and Gestational Diabetes.</h2>
 
-            <li><a href="#">Donate</a></li>
-                <ul>
-                    <li><a href="#">To site</a></li>
-                    <li><a href="#">Research For Cure</a></li>
-                </ul>
+        <p><strong><a href="#">Looking for symptoms?</a> </strong></p>
 
-        </ul>
+        <h3>Type 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero nisi eos sed qui natus, ut eius
+            reprehenderit
+            error nesciunt veniam aliquam nulla itaque labore obcaecati molestiae eveniet, perferendis provident amet
+            perspici
+            atis expedita accusantium! Eveniet, quos voluptas et, labore natus, saepe unde est nulla sit eaque tempore
+            debitis
+            accusantium. Recusandae.</p>
 
-    </nav>
+        <hr>
 
-    <div id="header">
-        <div class="header-cont">
-            <h1>Lorem</h1>
+        <h3>Type 2</h3>
+        <p>Dolorem aliquam a libero reiciendis obcaecati doloribus ipsa eos laudantium, dicta in! Odit iure ut ratione,
+            dolorum
+            cupiditate perferendis voluptatum sapiente, dignissimos sunt necessitatibus, reprehenderit consequatur dolorem.
+            Ali
+            quam veniam quaerat, pariatur deserunt reiciendis vero vitae, repellat omnis sequi dolor nesciunt. Nihil
+            similique a
+            lias impedit, obcaecati eligendi delectus voluptatum! Ipsum, vel.</p>
 
-            <h4>Luctus eget</h4>
-        </div>
-    </div>
+        <hr>
 
-    <div class="content">
-
-
-
-        <h2>Nam pretium blandit</h2>
-
-        <p>
-            Lorem ipsum dolor sit amet, congue libero in, quis at a amet orci tristique.
-            Sed in elit. Arcu pellentesque, ultrices ipsum purus wisi neque erat. Placerat eros et,
-            sed penatibus nisl suspendisse est, suscipit torquent eu donec eros. Nisl et imperdiet sed, est id nisl
-            erat wisi erat, luctus eget nulla rutrum, phasellus suscipit leo, arcu est tristique in felis blandit.
-            Quis pede erat, sociosqu non ac praesent gravida rhoncus, vitae odio, neque tincidunt vel velit donec justo.
-            Dui elementum viverra conubia in ac habitasse, nam arcu aenean vitae neque ornare, tellus aut aut facilisis,
-            malesuada id dolor placerat, pharetra nulla. Magna a arcu per libero, aenean non odio nunc laoreet purus,
-            phasellus porta nullam omnis dapibus morbi vestibulum. Dui ultricies, nec eget eros nec mattis ut ac,
-            dignissim proin donec, accumsan vestibulum sodales ultrices. Quisque wisi, pede odio, et purus porttitor
-            aliquam parturient.
-        </p>
-
-        <h2>Arcu pellentesque</h2>
-
-        <p>
-            Sociosqu non ac praesent gravida rhoncus, vitae odio, neque tincidunt vel velit donec justo.
-            Dui elementum viverra conubia in ac habitasse, nam arcu aenean vitae neque ornare, tellus aut aut facilisis,
-            malesuada id dolor placerat, pharetra nulla. Magna a arcu per libero, aenean non odio nunc laoreet purus,
-            phasellus porta nullam omnis dapibus morbi vestibulum. Dui ultricies, nec eget eros nec mattis ut ac,
-            dignissim proin donec, accumsan vestibulum sodales ultrices. Quisque wisi, pede odio, et purus porttitor
-            aliquam parturient.
-
-        </p>
-
-
+        <h3>Gestational</h3>
+        <p>Sint, perspiciatis nemo aut, rerum excepturi deleniti modi quos nihil corporis eum, maiores soluta labore,
+            consectet
+            ur eligendi nesciunt. Placeat, incidunt! Illum placeat eligendi, veritatis consectetur eum! Dolor obcaecati
+            minima
+            ab placeat voluptatem neque modi doloribus, magnam qui voluptate eaque in. Nulla expedita hic porro architecto
+            face
+            re officiis vitae numquam, dolor!</p>
+        <p>Perferendis quis ea incidunt ducimus nisi voluptate natus. Repellat asperiores quod rerum rem quos blanditiis
+            enim m
+            odi, veniam voluptas a facilis! Velit cum omnis, voluptatum eum inventore! Corrupti, suscipit, neque distinctio
+            exp
+            edita est laboriosam cum aliquid minus tempora quaerat officia possimus unde vel deleniti eaque fugit accusamus
+            iusto dolorum natus.</p>
     </div>
 
     <div id="footer">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
-    style="border-width:0"
-    src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
-    xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-    property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
-    xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under
-    a
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
-    International
-    License</a>.
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                                                                                 style="border-width:0"
+                                                                                 src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><span
+            xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+            property="dct:title" rel="dct:type">Blood Sugar Converter</span> by <span
+            xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jordan Reif</span> is licensed under
+        a
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+            International
+            License</a>.
     </div>
-<!-- Stop Code here-->
-
-<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <!-- Stop Code here-->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
